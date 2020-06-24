@@ -17,8 +17,8 @@ classify.fit(X,y)
 
 # make a prediction using a test data point
 print('Classification of third from last data point')
-print(classify.predict([digits.data[-3]]))
+print(classify.predict([digits.data[-9]]))
 
 # evaluate how well the algorithm guessed the value
-plt.imshow(digits.images[-3], cmap='viridis', interpolation='nearest')
+plt.imshow(digits.images[-9], cmap=plt.cm.gray_r, interpolation='nearest')
 plt.show()
